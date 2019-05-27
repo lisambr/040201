@@ -1,0 +1,128 @@
+@media only screen and (max-width: 750px) {
+    body {
+        background-color: #e84f48;
+    }
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*LOGIN PAGE*/
+
+form {
+    background-color: #e84f48;
+    text-align: center;
+    padding: 12px 20px;
+}
+
+.kealogo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+input[type=text],
+input[type=password] {
+    background-color: ghostwhite;
+    border-radius: 8px;
+    color: gray;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: ghostwhite;
+    border-radius: 8px;
+    color: gray;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    margin-top: 75px;
+    margin-bottom: 25px;
+}
+
+input[type=submit]:hover {
+    opacity: 0.9;
+}
+
+/*CLASSROOM PAGE*/
+
+.threedots{
+    width: 20px;
+    height: auto;
+    display: block;
+    background-color: darkgrey;
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+
+.dwl{
+    width: 20px;
+    height: auto;
+    display: block;
+    background-color: darkgrey;
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+
+h1, h2 {
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 35px;
+
+}
+
+ul{
+    list-style: none;
+}
+
+.handins, .downloads{
+    background-color: white;
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 10px;
+}
+
+/*NAVBAR*/
+
+nav {
+  overflow: hidden;
+  background-color: #CECECE;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 39px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  background: #e84f48;
+  color: black;
+}
+
+nav a.active {
+  background-color: white;
+  color: #e84f48;
+
+}

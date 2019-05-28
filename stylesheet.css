@@ -1,4 +1,22 @@
+.wrapper {
+    display: grid;
+}
 
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+header {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 2fr;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 body {
     font-family: Helvetica, Arial, sans-serif;
@@ -31,9 +49,7 @@ input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    display: inline-block;
     border: none;
-    box-sizing: border-box;
 }
 
 input[type=submit] {
@@ -55,7 +71,7 @@ input[type=submit]:hover {
 
 /*CLASSROOM PAGE*/
 
-.threedots{
+.threedots {
     width: 20px;
     height: auto;
     display: block;
@@ -64,7 +80,7 @@ input[type=submit]:hover {
     padding: 4px 10px;
 }
 
-.dwl{
+.dwl {
     width: 20px;
     height: auto;
     display: block;
@@ -74,60 +90,71 @@ input[type=submit]:hover {
 
 }
 
-h1, h2 {
+h1{
     background-color: white;
     text-align: center;
     border-radius: 8px;
-    padding: 4px 10px;
+    padding: 40px 10px;
     font-size: 35px;
+    display: inline-block;
 
 }
 
-ul{
+h2 {
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 50px 10px;
+    font-size: 35px;
+    display: inline-block;
+
+}
+
+ul {
     list-style: none;
 }
 
-.handins, .downloads{
+.handins,
+.downloads {
     background-color: white;
     border-radius: 8px;
     padding: 4px 10px;
     font-size: 10px;
-    display: inline-block;
 }
 
 /*NAVBAR*/
 
 nav {
-  overflow: hidden;
-  background-color: #CECECE;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+    overflow: hidden;
+    background-color: #CECECE;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 nav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 39px;
-  text-decoration: none;
-  font-size: 17px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 39px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 nav a:hover {
-  background: #e84f48;
-  color: black;
+    background: #e84f48;
+    color: black;
 }
 
 nav a.active {
-  background-color: white;
-  color: #e84f48;
+    background-color: white;
+    color: #e84f48;
 
 }
 
-@media only screen and (max-width: 450px) {
+/*@media only screen and (max-width: 450px) {
     body {
         background-color: #e84f48;
     }
-}
+}*/

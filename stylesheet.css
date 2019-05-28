@@ -1,6 +1,4 @@
-.wrapper {
-    display: grid;
-}
+/*GRIDS*/
 
 nav {
     display: grid;
@@ -15,7 +13,12 @@ header {
 
 ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: .5fr 4fr;
+    margin:
+}
+
+li{
+    margin: 1rem
 }
 
 body {
@@ -97,7 +100,9 @@ h1{
     padding: 40px 10px;
     font-size: 35px;
     display: inline-block;
-
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 h2 {
@@ -107,6 +112,8 @@ h2 {
     padding: 50px 10px;
     font-size: 35px;
     display: inline-block;
+    margin: 1rem;
+
 
 }
 
@@ -118,6 +125,7 @@ ul {
 .downloads {
     background-color: white;
     border-radius: 8px;
+    margin: 1rem;
     padding: 4px 10px;
     font-size: 10px;
 }
@@ -129,7 +137,7 @@ nav {
     background-color: #CECECE;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 96%;
 }
 
 nav a {

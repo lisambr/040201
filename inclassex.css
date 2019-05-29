@@ -1,79 +1,7 @@
-body{
+/*body{
     font-family: Helvetica, Arial, sans-serif;
 }
-
-.box1{
-    background-color: deepskyblue;
-    padding: 10px;
-    text-align: center;
-    border-radius: 8px;
-    margin: 10px;
-    height: 50px;
-    width: 50px;
-}
-
-.box2{
-    background-color: dodgerblue;
-    padding: 10px;
-    text-align: center;
-     border-radius: 8px;
-    margin: 10px;
-    height: 50px;
-    width: 50px;
-}
-
-.box3{
-    background-color: cornflowerblue;
-    padding: 10px;
-    text-align: center;
-     border-radius: 8px;
-    margin: 10px;
-    height: 50px;
-    width: 50px;
-}
-
-.box4{
-    background-color: navy;
-    color: aliceblue;
-    padding: 10px;
-    text-align: center;
-     border-radius: 8px;
-    margin: 10px;
-    height: 50px;
-    width: 50px;
-}
-
-/* TYPOGRAPHY */
-@import url('https://fonts.googleapis.com/css?family=Muli');
-
-html, body {
-    font-family: 'Muli', sans-serif;
-    color: #fff;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-
-h1 {
-    font-weight: bold;
-}
-
-h2 {
-    font-style: italic;
-}
-
-main > * { /* select all direct descendants */
-  border: none;
-  padding: 1em;
-}
-
-aside > * { /* select all direct descendants */
-  border: none;
-  padding: 1em;
-}
-
-/* MEDIA QUERIES */
-@media only screen and (min-width:450px) {
+@media only screen and (max-width:450px) {
     body {
         display: grid;
         grid-template-columns: 1fr;
@@ -83,195 +11,270 @@ aside > * { /* select all direct descendants */
             "aside"
             "footer";
     }
+body {
+  margin: 40px;
+}*/
 
-    ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #16235d;
-}
+/*GRIDS*/
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #16134d;
-}
-}
-
-@media only screen and (min-width:900px) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-            "header header header"
-            "main main main"
-            "aside aside aside"
-            "footer footer footer";
-    }
-    main{
+nav {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-    ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #16235d;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-li {
-    float: right;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #16134d;
-}
-}
-
-@media only screen and (min-width:1200px) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-            "header header header"
-            "main main aside"
-            "footer footer footer";
-    }
-    main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-    ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #16235d;
-}
-
-li {
-    float: right;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #16134d;
-}
-}
-
-
-
-/* GRID SPECIFIC STYLES */
 header {
-    grid-area: header;
-    background-color: #16134d;
-    text-align: center;
-    color:#efeadd;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 2fr;
 }
 
-main > * { /* select all direct descendants */
-  border: none;
-  padding: 1em;
+ul {
+    display: grid;
+    grid-template-columns: .5fr 4fr;
+    margin:
 }
 
-main {
-    grid-area: main;
-    background-color: #16134d;
-}
-
-aside {
-    grid-area: aside;
-    background-color: #16134d
-}
-
-footer {
-    grid-area: footer;
-    background-color: #16235d;
-    color: #efeadd;
-    text-align: center;
+li {
+    margin: 1rem
 }
 
 body {
-    border: none;
-    background-color: white;
-
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #e84f48;
 }
 
-/*IMAGE*/
-img {
-    width: 70%;
+test {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*LOGIN PAGE*/
+
+form {
+    background-color: #e84f48;
+    text-align: center;
+    padding: 12px 20px;
+}
+
+.kealogo {
+    width: 150px;
     height: auto;
-    align-content: space-around;
-    display:block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
-figure {
-    align-content: space-around
+input[type=text],
+input[type=password] {
+    background-color: ghostwhite;
+    border-radius: 8px;
+    color: gray;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
 }
 
-figcaption {
+input[type=submit] {
+    background-color: ghostwhite;
+    border-radius: 8px;
+    color: gray;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    margin-top: 75px;
+    margin-bottom: 25px;
+}
+
+input[type=submit]:hover {
+    opacity: 0.9;
+}
+
+/*CLASSROOM PAGE*/
+
+.threedots {
+    width: 20px;
+    height: auto;
     display: block;
-    margin-left: 30%;
-    clear: right;
-    background-color: #16134d
+    background-color: darkgrey;
+    border-radius: 8px;
+    padding: 4px 10px;
 }
 
- ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #16235d;
-}
-
-li {
-    float:none;
-}
-
-li a {
+.dwl {
+    width: 20px;
+    height: auto;
     display: block;
-    color: white;
+    background-color: darkgrey;
+    border-radius: 8px;
+    padding: 4px 10px;
+
+}
+
+h1 {
+    background-color: white;
     text-align: center;
-    padding: 14px 16px;
+    border-radius: 8px;
+    padding: 40px 10px;
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 50px 10px;
+    font-size: 30px;
+    display: inline-block;
+    margin: 1rem;
+
+
+}
+
+ul {
+    list-style: none;
+}
+
+.handins,
+.downloads {
+    background-color: white;
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 4px 10px;
+    font-size: 10px;
+}
+
+p {
+    color: white;
+    font-size: 25px;
+    padding: 1px 30px
+}
+
+/*PROFILE*/
+
+.ppic {
+    width: 100%;
+    height: auto;
+    padding: 30px 30px;
+}
+
+header {
+    background-color: white;
+    border-radius: 8px;
+    margin: 1rem;
+}
+
+h3 {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px 10px;
+    font-size: 80%;
+    display: inline-block;
+    margin: 1rem;
+}
+
+.feedback {
+    background-color: white;
+    border-radius: 8px;
+    margin: 1rem;
+
+}
+
+.check {
+    width: 20px;
+    height: auto;
+    display: block;
+    background-color: #7BBE82;
+    border-radius: 8px;
+    padding: 4px 10px;
+
+
+}
+
+.portfolio {
+    background-color: white;
+    border-radius: 8px;
+    margin: 1rem;
+}
+
+.folioimg {
+    width: 80%;
+    padding: .5px 50px;
+}
+
+/*NAVBAR*/
+
+nav {
+    overflow: hidden;
+    background-color: #CECECE;
+    position: fixed;
+    bottom: 0;
+    width: 98%;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 19px 30px;
     text-decoration: none;
+    font-size: 25px;
 }
 
-li a:hover {
-    background-color: #16134d;
-}
-
-footer a {
-    color: #16134d;
-    padding: 1px ;
-    text-decoration: none;
-}
-
-footer a:hover {
-    background-color: #efeadd;
+nav a:hover {
+    background: #e84f48;
     color: black;
+}
+
+nav a.active {
+    background-color: white;
+    color: #e84f48;
+
+}
+
+/*PHONE SIZE*/
+@media only screen and (max-width: 450px) {
+    body {
+        background-color: black;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    header {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: .5fr 4fr;
+        margin:
+    }
+
+    li {
+        margin: 1rem
+    }
+
+    nav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 12px;
+    }
 }

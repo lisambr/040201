@@ -17,13 +17,18 @@ ul {
     margin:
 }
 
-li{
+li {
     margin: 1rem
 }
 
 body {
     font-family: Helvetica, Arial, sans-serif;
     background-color: #e84f48;
+}
+
+test {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 /*LOGIN PAGE*/
@@ -93,12 +98,12 @@ input[type=submit]:hover {
 
 }
 
-h1{
+h1 {
     background-color: white;
     text-align: center;
     border-radius: 8px;
     padding: 40px 10px;
-    font-size: 35px;
+    font-size: 30px;
     display: inline-block;
     margin-left: 1rem;
     margin-bottom: 1rem;
@@ -110,7 +115,7 @@ h2 {
     text-align: center;
     border-radius: 8px;
     padding: 50px 10px;
-    font-size: 35px;
+    font-size: 30px;
     display: inline-block;
     margin: 1rem;
 
@@ -130,6 +135,64 @@ ul {
     font-size: 10px;
 }
 
+p {
+    color: white;
+    font-size: 25px;
+    padding: 1px 30px
+}
+
+/*PROFILE*/
+.ppic {
+    width: ;
+    height: auto;
+    padding: 30px 30px;
+}
+
+header {
+    background-color: white;
+    border-radius: 8px;
+    margin: 1rem;
+}
+
+h3 {
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 50px 10px;
+    font-size: 30px;
+    display: inline-block;
+    margin: 1rem;
+}
+
+.feedback {
+    background-color: white;
+    border-radius: 8px;
+    margin: 1rem;
+
+}
+
+.check {
+    width: 20px;
+    height: auto;
+    display: block;
+    background-color: #7BBE82;
+    border-radius: 8px;
+    padding: 4px 10px;
+
+
+}
+
+.portfolio {
+    background-color: white;
+    border-radius: 8px;
+    margin: 1rem;
+}
+
+.folioimg {
+    width: 50%;
+    padding: 20px 30px;
+}
+
 /*NAVBAR*/
 
 nav {
@@ -137,7 +200,7 @@ nav {
     background-color: #CECECE;
     position: fixed;
     bottom: 0;
-    width: 96%;
+    width: 98%;
 }
 
 nav a {
@@ -145,9 +208,9 @@ nav a {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 39px;
+    padding: 19px 30px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 25px;
 }
 
 nav a:hover {
@@ -161,8 +224,40 @@ nav a.active {
 
 }
 
-/*@media only screen and (max-width: 450px) {
+/*PHONE SIZE*/
+@media only screen and (max-width: 450px) {
     body {
-        background-color: #e84f48;
+        background-color: black;
     }
-}*/
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    header {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: .5fr 4fr;
+        margin:
+    }
+
+    li {
+        margin: 1rem
+    }
+
+    nav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 12px;
+    }
+}

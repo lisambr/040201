@@ -28,6 +28,28 @@ main > .box1 > ul > li > a {
     margin-top: .75rem;
 }
 
+main > .herolisa > a {
+    background-color: #e84f48;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    padding: 1rem;
+    margin-top: .75rem;
+}
+
+main > .box2 > ul > li > a {
+    background-color: #e84f48;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    padding: .5rem;
+    margin-top: .75rem;
+}
+
 /*STYLES*/
 
 h1,
@@ -72,6 +94,7 @@ ol {
     background-color: #7BBE82;
     border-radius: 8px;
     padding: 4px 10px;
+}
 .check {
     width: 20px;
     height: auto;
@@ -99,11 +122,20 @@ ol {
 }
 
 h3{
-    color: darkgrey;
-    text-align: center;
+    color: white;
+    text-align: left;
+    padding-left: 3rem;
+}
+
+.hero {
+    background: url('assets/calendar.png') center;
+    border-radius: 10px;
+    background-size: cover;
+    padding: 4rem 2rem;
 }
 /* grid styles */
 
+.hero{
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 align-items: center;
@@ -122,6 +154,17 @@ grid-gap: 1rem;
     grid-template-columns: .1fr 4fr;
 }
 
+.box2 > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-right: 2rem
+}
+
+.box2 > ul > li > ol {
+    display: grid;
+    grid-template-columns: .1fr 4fr;
+}
 /* Classroom list */
 
 .box1 > ul > li {
@@ -141,7 +184,30 @@ grid-gap: 1rem;
 .box1 > ul > li > ol > li {
     padding: .5rem;
 }
+/* Profile list */
 
+.box2 > ul > li {
+    border-radius: 10px;
+    background-color: white;
+}
+
+.box2 > ul > li > a {
+    padding: .5rem 1rem;
+    margin: .5rem;
+}
+
+.box2 > ul > li > ol {
+    padding: .5rem;
+}
+
+.box2 > ul > li > ol > li {
+    padding: .5rem;
+}
+
+.folioimg{
+    width: 200px;
+
+}
 /*NAVBAR*/
 nav {
     overflow: hidden;
@@ -181,4 +247,11 @@ footer > p {
     color: #e84f48;
     font-size: 10px;
     text-align: center;
+}
+
+/*animation*/
+
+
+a:hover{
+    transform: translate(5px)
 }

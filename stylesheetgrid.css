@@ -1,0 +1,99 @@
+body{
+    background-color: hotpink;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+li{
+    list-style: none;
+    padding: 1rem;
+}
+
+.threedots, .dwl {
+    width: 20px;
+    height: auto;
+    display: block;
+    background-color: darkgrey;
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+
+.check {
+    width: 20px;
+    height: auto;
+    display: block;
+    background-color: #7BBE82;
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+
+h1, h2, .box1, .box2{
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+h1, h2{
+    font-size: 10px;
+    display: inline-block;
+}
+
+p{
+    color: white;
+    padding: .5px 30px;
+}
+
+.folioimg{
+    width: 100px;
+    height: auto
+}
+
+.ppic{
+    width: 150px;
+    height: auto;
+}
+
+/*NAVBAR*/
+
+nav {
+    overflow: hidden;
+    background-color: #CECECE;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+nav a {
+    float:left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background: #e84f48;
+    color: black;
+}
+
+nav a.active {
+    background-color: white;
+    color: #e84f48;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 450px) {
+    header{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: .1fr 4fr;
+
+    }
+}
